@@ -41,3 +41,13 @@ Non-semantic -  div, span
 13. Table
 14. Form
 15. Deploy
+
+## Intermediate HTML
+
+- Meta tag & SEO
+- Adding font-qwesomee icons and Google Font
+- advance table
+- advanceed form
+- form data send to your email
+- Multimedia
+- html5 elements 
