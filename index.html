@@ -115,7 +115,7 @@
         </li></ol>
     </section>
 
-     <!--Personal fotter-->
+     <!--Contact Form-->
      
      <section id="contact">
         <h2>Contact Me</h2>
@@ -129,16 +129,31 @@
                 <label for="email">Email:</label>
             <input type="email" id="email" name="email" required>
             </div>
-
+            <div>
+                <label for="Age">Age:</label>
+            <input type="number" id="Age" name="Age" required min="17" >
+            </div>
+            <div>
+                <label for="Website">Website:</label>
+            <input type="url" id="Website" name="Website" required>
+            </div>
+             <div>
+            <label for="subject">Subject:</label>
+            <select name="subject" id="subject" name="subject">
+                <option value="Inquiry">Inquiry</option>
+                <option value="Feedback">Feedback</option>
+                <option value="Job">Job Opportunity</option>
+                </select>
+                </div>
              <div>
                 <label for="message">Message:</label>
             <textarea id="message" cols="20" rows="5" name="message"></textarea >
              </div>
-
-         <div>
+               <div>
                <button>Submit</button>
             <button>Reset</button
           </div>
+            
         </form>
      </section></main>
     
