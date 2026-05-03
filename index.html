@@ -11,75 +11,61 @@
 
     <!-- Font Awsome link -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
-    <link<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-<style>
-    body{background-color:rgb(223, 222, 222);}
-    fofont-family: "Roboto", sans-serif;
-</style>
-<main>
+
+
+    <link rel="stylesheet" href="index.css">
     </head>
 <body>
         <!--Personal navebar -->
     <header>
         <nav> <ul>
-            <li><a href="index.html" title="Visite Home Page" target="_self">Home</a></li> </ul>
+            <li>
+                <a href="index.html" title="Visite Home Page" target="_self">Home</a></li> </ul>
                 <ul>
-                    <li><a href="#about" title="Visite About Page" target="_self">About Me</a></li>
+                    <li><a href="#about"title="Visite About Page" target="_self">About Me</a></li>
                 </ul>
                <ul>
-                <li><a href="#skill" title="Visite Contact Page" target="_self">Contact Me </a></li> </ul> 
+                <li><a href="#skill"  title="Visite Contact Page" target="_self">Contact Me </a></li> </ul> 
                   <ul>
-                <li><a href="#project" title="Visite Project Page" target="_self"> My Projects</a></li> </ul>
+                <li><a href="#project"  title="Visite Project Page" target="_self"> My Projects</a></li> </ul> 
                    <ul>
-                <li><a href="#contact" title="Visite Project Page" target="_self"> Contact Me</a></li> </ul>  
+                <li><a href="#contact"  title="Visite Project Page" target="_self"> Contact Me</a></li> </ul>  
                       
         </nav>
         
     </header id="intro">
-
+    <main>
+ <section>
     <!--Personal information-->
-    <header>
-        <h1>Md Tarek Aziz </h1> 
+   
+       <div class="card"> <h1>Md Tarek Aziz </h1> 
         
-        <header> <em>Graphic Designere and Web Devloper and Video Editor</em></header>
+        <em>Graphic Designere and Web Devloper and Video Editor</em></header>
         <hr>
         <a href="https://www.youtube.com/@TsDShoCk/videos"><img src="./images/tarek.jpg" alt="Tarek Aziz" height="200"></a>
-        
-    </header id="intro">
-<section id="about">
+        </div>
+    </section>
+
+<section class="card">
       <h2>About Me </h2>
     <p><strong>Experience:</strong> 6 Years Exprienc in Graphic Design and video editor</p>
     <p><strong>Education:</strong> BSC in Computer Science Enginering</p>
     <p><strong><u>Uniersity:</u></strong> Primeasia University</p>
+    </section>
 </section>
     
     </body>
 
     <!--Personal Skill -->
-   <section id="skill">
+   <section id="skill" class="card">
     <h2><strong>Skill</strong></h2>
-    <p><ul>
-        <li>HTML</li>
-        <li>CSS</li>
-        <li>Java Script</li>
-        <ul>
-            <li>Angular.js</li>
-            <li>React.js</li>
-            <li>Node.js</li>
-            <li>Express.js</li>
-        </ul>
-    </ul>
-    <ul type="4">
-        <li>Mongo.BD</li>
-        <li>TypeScript</li>
-    </ul>
-</p>
-    
-        <table border="1" cellpadding="5" cellspacing="0">
+
+
+    <section>
+        <table>
     <thead>
         <tr>
             <td> <strong>Technology</strong></td>
@@ -102,12 +88,30 @@
         
         
     </tbody>
-</table>
+    </table>
+    </section>
+
+    <h3>Skill Progress</h3>
+    <label for="html">HTML <progress value="90" max="100"></progress></label>
+    </div>
+    <div
+  <label for="css">CSS <progress value="70" max="100"></progress></label>
+  </div>
+  <div>
+  <label for="js">JavaScript <progress value="60" max="100"></progress></label>
+    </div>
+
+    <div>
+        <h3>Exprience Levl</h3>
+       <label for="Exprience">Exprince:</label>
+       <meter value="5" id="Exprience" min="0" max="10">5 years</meter> 
+        </div>
+
     
    </section>
 
     <!--Personal Projects-->
-    <section id="project">
+    <section id="project" class="card">
         <h2>Projects</h2>
         <ol><li><a target="_blank" href="https://github.com/tarekaziz9">Tarek Aziz Git Hub Protfolio</a>
             <li>Blog Website</li>
@@ -115,16 +119,36 @@
         </li></ol>
     </section>
 
+  
      <!--Contact Form-->
      
-     <section id="contact">
+     <section id="contact" class="card">
         <h2>Contact Me</h2>
-        <form>
+        <form action="https://formspree.io/f/xjgjdkbj"
+  method="POST">
             <div>
                 <label for="name">Name:</label>
             <input type="text" id="name" name="name" required>
             </div>
+            <div>
+                <label for="Favorite">Favotire Color:</label>
+            <input type="color" id="Favorite" name="Favorite" required>
+            </div>
+              
+            <div>
+                <label for="Exprienc Level">Exprienc Levl</label>
+                <input type="range" id="Exprienc" name="Exprienc" min="3" max="10" required>
+            </div>
+             
+             <label for="Favorite Programing">Favorite Programming Language:</label>
+             <input list="languages" id="Favorite Programing" name="Favorite Programing">
 
+           <datalist id="languages">
+            <option value="C">
+            <option value="C++">
+            <option value="Java">
+            <option value="Python">
+           </datalist>
             <div>
                 <label for="email">Email:</label>
             <input type="email" id="email" name="email" required>
@@ -139,11 +163,17 @@
             </div>
              <div>
             <label for="subject">Subject:</label>
+            
             <select name="subject" id="subject" name="subject">
                 <option value="Inquiry">Inquiry</option>
                 <option value="Feedback">Feedback</option>
                 <option value="Job">Job Opportunity</option>
                 </select>
+                </div>
+                <div>
+                <label for="Image File">Image:</label>
+                <input type="file" id="Imagee" name="image"a">
+                
                 </div>
              <div>
                 <label for="message">Message:</label>
@@ -155,17 +185,20 @@
           </div>
             
         </form>
-     </section></main>
+     </section>
+    </main>
     
     
-    <!--Personal footer-->
+    <!--Personal footer--> 
+
     <footer>
 
         <p>Copyright reserved by © Tarek Aziz</p>
         <a href="tel:01730484937">Call Me </a>
             <a href="mailto:tarekpramanik109@gmail.com">Email Me</a>
 
-<h3>Flow Me</h3>
+<div class="Social-media">
+            <h3>Flow Me</h3>
 <ol>
     <ul type="square">
         <li><a href="https://www.linkedin.com/in/tarekazizmd" target="_blank"><i class="fa-brands fa-linkedin-in"></i>Linkind</a></li> 
@@ -174,8 +207,13 @@
 <li><a href="mailto:tarekpramanik109@gmail.com" target="_blank"><i class="fa-solid fa-envelope"></i> Gmail</a></li>
     </ul>
     </ol>
-    
-
+    </div>
+  <section> <iframe>
+   <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14386.102278049355!2d88.90524018597803!3d25.653866981366836!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39fcad33daa7a24d%3A0xc904e91fbb82c481!2sParbatipur!5e0!3m2!1sen!2sbd!4v1777232832877!5m2!1sen!2sbd" width="300" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> </section>
+        </iframe>
+        
+<section>
+        </section>
             
     </footer>
 </body>

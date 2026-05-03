@@ -51,3 +51,22 @@ Non-semantic -  div, span
 - form data send to your email
 - Multimedia
 - html5 elements 
+
+### Advanced HTML 
+- More Advance Fom - <inpute type="color/range">
+Datalist, fielset, Legnd
+- web accessibility
+
+ - Use Semantic tag
+ - Use lang attribute
+ - usee heading tags in order (H1-h2-h3)
+ - use alt attribute for image
+ - contrast ratio
+ - use meningful link text.
+ - label (for) + inpute (id)
+ - meta tag, description, keywoerds
+
+- HTML API
+- HTML Templates and Web componennts
+- Souurcs for symbolos, icon, emoji, Colors
+- learning resources
